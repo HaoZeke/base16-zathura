@@ -7,17 +7,12 @@ It is meant to be used along with the [new implementation][3] of base16 colorsch
 project, which propose a modular approach, by separating templates, schemes and
 builder into different repositories.
 
+# installation
 
-<!--```bash-->
-<!-- back up your old zathura config-->
-<!--cp ~/.config/zathura/zathurarc-->
-<!--mkdir -p ~/.config/zathura-->
-<!--curl https://raw.githubusercontent.com/khamer/base16-termite/master/themes/base16-default-dark.config >> ~/.config/termite/config-->
-<!--```-->
-
-# References
+Append your favorite base16 colorscheme from the `build_scheme` directory into
+your zathura configuration file `$XDG_CONFIG_HOME/zathura/zathurarc (default:
+~/.config/zathura/zathurarc)`.
 
 [1]: https://chriskempson.github.io/base16/
 [2]: https://pwmt.org/projects/zathura/
 [3]: https://github.com/chriskempson/base16
-<!--[4]: https://github.com/chriskempson/base16-builder-->
