@@ -1,3 +1,3 @@
 default:
     extension: .config
-    output: colorschemes
+    output: build_schemes 
