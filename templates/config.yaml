@@ -1,3 +1,7 @@
 default:
     extension: .config
-    output: build_schemes 
+    output: colors
+
+recolor:
+    extension: .config
+    output: recolors
