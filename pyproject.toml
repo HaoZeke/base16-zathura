@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "base16-zathura"
+version = "0.1.0"
+description = "A project profile for working with base16 schemes"
+authors = ["Rohit Goswami <rgoswami@ieee.org>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pybase16-builder = "^0.2.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
