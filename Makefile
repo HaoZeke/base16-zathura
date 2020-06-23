@@ -4,7 +4,7 @@
 BUILD=pybase16
 REPO=$(shell pwd)
 TEMPLATE=$(shell basename ${REPO})
-THEME_DIR=build_schemes
+BUILD_DIR=build_schemes
 TEMPLATE_DIR=templates
 OUTPUT=output
 
@@ -15,8 +15,9 @@ update:
 
 build:
 	$(BUILD) build -t ${REPO} -o ${OUTPUT}
-	rm -rf ${THEME_DIR}
-	mv ${OUTPUT}/${TEMPLATE}/${THEME_DIR}/ ${THEME_DIR}/
+	rm -rf ${BUILD_DIR}
+	mkdir ${BUILD_DIR}
+	cat templates/config.yaml | grep output | cut -d' ' -f6 | xargs -L1 -I {} mv ${OUTPUT}/${TEMPLATE}/{}/ ${BUILD_DIR}/
 
 clean:
 	rm -rf ${OUTPUT} ${TEMPLATE_DIR}/*/
