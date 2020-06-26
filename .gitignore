@@ -6,3 +6,4 @@ templates/*
 
 !/templates/config.yaml
 !/templates/default.mustache
+!/templates/recolor.mustache
