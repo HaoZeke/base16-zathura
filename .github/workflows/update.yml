@@ -1,21 +1,19 @@
-name: Update the repository with the latest base16 colorschemes
+name: Rebuild base16 colorschemes
 on:
   schedule:
-    - cron: "0 0 * * 0" # https://crontab.guru/every-week
+    - cron: "0 0 * * *" # https://crontab.guru/every-day
 jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Poetry
-        uses: abatilo/actions-poetry@v1.5.0
+      - name: Get nix
+        uses: cachix/install-nix-action@v12
         with:
-          python-version: 3.8.0
-          poetry_version: 1.0
-          args: install
+          nix_path: nixpkgs=channel:nixos-unstable
       - name: Fetch the repository code
         uses: actions/checkout@v2
-      - name: Run make
-        run: poetry run make
+      - name: Build
+        run: nix-shell --run "mmake"
       - name: Commit the changes, if any
         uses: stefanzweifel/git-auto-commit-action@v4.1.1
         with:
