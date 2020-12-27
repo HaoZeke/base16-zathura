@@ -16,7 +16,7 @@ your zathura configuration file `$XDG_CONFIG_HOME/zathura/zathurarc (default: ~/
 
 # Contributing
 
-In order to contribute, please make sure to use the `poetry` setup. For details
+In order to contribute, please make sure to use the `nix-shell` setup. For details
 on the `direnv` setup [see this](https://rgoswami.me/posts/poetry-direnv/). This
 project also follows a code of conduct, borrowed from the [d-SEAMS guidelines](https://github.com/d-SEAMS/seams-core/blob/master/CONTRIBUTING.md).
 
