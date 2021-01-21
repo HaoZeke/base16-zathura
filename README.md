@@ -20,6 +20,6 @@ In order to contribute, please make sure to use the `nix-shell` setup. For detai
 on the `direnv` setup [see this](https://rgoswami.me/posts/poetry-direnv/). This
 project also follows a code of conduct, borrowed from the [d-SEAMS guidelines](https://github.com/d-SEAMS/seams-core/blob/master/CONTRIBUTING.md).
 
-[1]: https://chriskempson.github.io/base16/
+[1]: http://chriskempson.com/projects/base16/
 [2]: https://pwmt.org/projects/zathura/
 [3]: https://github.com/chriskempson/base16
